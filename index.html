@@ -13,9 +13,9 @@
     <title>Tyler Kuhn | Portfolio</title>
   </head>
   <body>
-    <header class="container">
+    <header class="z-3 position-fixed-top">
       <nav
-        class="navbar navbar-expand-md border-bottom border-body fixed-top bg-light-subtle-border"
+        class="navbar navbar-expand-md border-bottom border-body bg-light-subtle-border"
       >
         <a class="navbar-brand navbar-brand-font-size ms-3">
           <span class="d-none d-lg-inline">TK|Development</span>
@@ -59,16 +59,105 @@
         </div>
       </nav>
     </header>
-    <main class="container mt-5">
-      <div class="row">
-        <div class="col-12 col-md-6 mt-5 pe-5">
-          <img src="resources/images/profile_pic.jpg" class="img-fluid rounded">
+    <main class="container mt-5 pt-5 mb-5">
+      <div id="home" class="row gap-4">
+        <div class="col-12 col-md-5 pt-5 pe-5">
+          <img
+            src="resources/images/profile_pic.jpg"
+            class="img-fluid rounded shadow-lg border border-secondary"
+          />
         </div>
-        <div class="col-12 col-md-6 mt-auto ps-5 m-sm-5">
-          <h2>Hi I'm Tyler Kuhn</h2>
+        <div class="col-12 col-md-6 mt-auto pe-5">
+          <h1>Hi I'm Tyler Kuhn</h1>
           <p>Crafting Clean Code & Minimalist Designs</p>
         </div>
       </div>
+      <div id="about" class="row">
+        <div class="col-12 col-lg-6 my-5 py-5">
+          <h2>About me</h2>
+          <p>
+            I am a passionate front-end web developer dedicated to building
+            responsive, user-friendly websites that merge functionality with
+            minimalist design. My journey in tech began with a deep curiosity
+            for how websites work, evolving into a committed pursuit of
+            front-end development. I hold a certification in Software Testing
+            from TripleTen, which has strengthened my attention to detail and
+            commitment to delivering quality web experiences. When I’m not
+            coding, you’ll find me rock climbing, embracing the challenges of
+            the climb much like tackling complex coding problems—one step at a
+            time. I’m excited about creating seamless digital experiences while
+            continuously learning and growing in the ever-evolving world of web
+            development.
+          </p>
+        </div>
+        <div class="col-12 col-lg-3">
+          <img src="" class="img-fluid rounded shadow-lg border border-secondary">
+        </div>
+        <div class="col-12 col-lg-3">
+          <img src="" class="img-fluid rounded shadow-lg border border-secondary">
+        </div>
+      </div>
+      <div id="projects" class="row mt-5 pt-5">
+        <div class="col-12 col-lg-4 mt-5">
+          <div class="card shadow" style="width: 18rem">
+           <img
+              src="resources/images/portfolio-preview.png"
+              class="card-img-top mb-2 pb-4 border"
+              alt="Preview of a Portfolio Site."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Site</h5>
+              <p class="card-text">
+                A responsive and visually appealing portfolio website showcasing
+                personal projects, skills, and experience. Built with a focus on
+                clean design, dark and light themes, and user-friendly
+                navigation. The site highlights web development projects while
+                reflecting a minimalist design aesthetic.
+              </p>
+              <ul>
+                <li>
+                  Frontend: HTML, CSS (Bootstrap, custom styles), JavaScript,
+                  React
+                </li>
+                <li>
+                  Design: Responsive design, dark/light theme switching, HSLA
+                  color schemes
+                </li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Deployment: GitHub Pages</li>
+              </ul>
+              <a href="https://tyler-kuhn.github.io/Portfolio_Site/" target="_blank" class="btn btn-dark">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mt-5">
+          <div class="card shadow" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 text-center mt-5">
+          <div class="card shadow" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="row"></div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
