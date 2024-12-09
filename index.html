@@ -13,9 +13,9 @@
     <title>Tyler Kuhn | Portfolio</title>
   </head>
   <body>
-    <header class="z-3 position-fixed-top">
+    <header class="z-3 position-fixed-top ">
       <nav
-        class="navbar navbar-expand-md border-bottom border-body bg-light-subtle-border"
+        class="navbar navbar-expand-md border-bottom border-body"
       >
         <a class="navbar-brand navbar-brand-font-size ms-3">
           <span class="d-none d-lg-inline">TK|Development</span>
@@ -26,9 +26,9 @@
             <input
               class="form-check-input"
               type="checkbox"
-              id="lightModeSwitch"
+              id="themeToggle"
             />
-            <label class="form-check-label" for="lightModeSwitch">Light</label>
+            <label class="form-check-label" for="themeToggle">Light</label>
           </div>
           <div>
             <ul class="navbar-nav flex-row">
@@ -59,7 +59,7 @@
         </div>
       </nav>
     </header>
-    <main class="container mt-5 pt-5 mb-5">
+    <main class="container mt-5 pt-5 mb-5 ">
       <div id="home" class="row">
         <div class="col-12 col-md-5 pt-5 pe-5">
           <img
@@ -72,16 +72,18 @@
           <p>Crafting Clean Code & Minimalist Designs</p>
         </div>
       </div>
-      <div id="about" class="row">
-        <div class="col-12 col-lg-6 my-5 py-5">
+      <div id="about" class="row my-5 p-5">
+        <div class="col-12 col-lg-6 my-5 p-5 border rounded shadow">
           <h2>About me</h2>
           <p>
-            Hi, I’m Tyler, a front-end web developer passionate about creating
-            responsive, user-friendly websites with clean, minimalist designs. I
-            hold a certification in Software Testing from TripleTen, which has
-            sharpened my attention to detail and commitment to quality. When I’m
-            not coding, you’ll find me rock climbing, embracing challenges both
-            on the wall and in my projects.
+            Hi, I’m Tyler, a front-end web developer and photographer passionate
+            about creating responsive websites with clean, minimalist designs. I
+            hold a certification in Software Testing from TripleTen, sharpening
+            my attention to detail and commitment to quality. My experience in
+            photography inspires my design approach, helping me craft visually
+            appealing digital experiences. When I’m not coding or behind the
+            camera, you’ll find me rock climbing, embracing challenges both on
+            the wall and in my projects.
           </p>
         </div>
         <div class="col-12 col-lg-3 mt-5 p-5">
@@ -132,19 +134,20 @@
               <a
                 href="https://tyler-kuhn.github.io/Portfolio_Site/"
                 target="_blank"
-                class="btn btn-dark"
+                class="btn"
                 >Live Demo</a
               >
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-4 mt-5">
-          <div class="card shadow" style="width: 18rem">
+          <div class="card shadow " style="width: 18rem">
             <img
               src="resources/images/mdp_preview.png"
-              class="card-img-top mb-2 pb-4 border"
+              class="card-img-top mb-2 border"
+              style="height: 10rem;"
               alt="Preview of Wedding photography site"
-            />
+            /><!-- Remove above style and add to css later-->
             <div class="card-body">
               <h5 class="card-title">Modern Dynamics Photography</h5>
               <p class="card-text">
@@ -157,21 +160,30 @@
               </p>
               <ul>
                 <li>Frontend Development: HTML, CSS, JavaScript</li>
-                <li>UI/UX Design: Responsive design, custom styles, and layout optimization</li>
+                <li>
+                  UI/UX Design: Responsive design, custom styles, and layout
+                  optimization
+                </li>
                 <li>Interactive Features: Swiper.js for image carousels</li>
-                <li>Web Development Skills: DOM manipulation, CSS animations, and cross-browser compatibility</li>
-                <li>Future Enhancements: Photo gallery and collections page integration</li>
+                <li>
+                  Web Development Skills: DOM manipulation, CSS animations, and
+                  cross-browser compatibility
+                </li>
+                <li>
+                  Future Enhancements: Photo gallery and collections page
+                  integration
+                </li>
               </ul>
               <a
                 href="https://tyler-kuhn.github.io/ModernDynamicsPhotography/"
                 target="_blank"
-                class="btn btn-dark"
+                class="btn"
                 >Live Demo</a
               >
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 text-center mt-5">
+        <div class="col-12 col-lg-4 text-center mt-5 ">
           <div class="card shadow" style="width: 18rem">
             <img src="..." class="card-img-top" alt="..." />
             <div class="card-body">
@@ -180,12 +192,22 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-dark">Live Demo</a>
+              <a href="#" class="btn">Live Demo</a>
             </div>
           </div>
         </div>
       </div>
-      <div id="contact" class="row"></div>
+      <div id="contact" class="row text-center my-5 py-5">
+        <form action="/submit" method="POST" class="border shadow rounded">
+          <label for="name" class="form-label my-3">Name</label>
+          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Enter your Name" required>
+          <label for="email" class="form-label mb-3">Email</label>
+          <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Enter your Email"  required>
+          <label for="message" class="form-label mb-3">Message</label>
+          <textarea class="form-control" id="message" class="mb-3" name="message" rows="5" placeholder="Send me a message" required></textarea>
+          <input type="submit" value="Send" class="btn my-3">
+        </form>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

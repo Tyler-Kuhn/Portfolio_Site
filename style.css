@@ -1,0 +1,20 @@
+/*Imports*/
+
+:root {
+    --main-color:hsla(0, 0%, 97%, 1);
+    --text-color: hsla(0, 0%, 13%, 1);
+    --accent-color: hsla(204, 70%, 53%, 1);
+    --card-bg: hsla(0, 0%, 100%, 1);
+    --border-color: hsla(0, 0%, 88%, 1);
+}
+
+.dark-mode {
+    --background: hsla(0, 0%, 7%, 1);
+    --text-color: hsla(0, 0%, 88%, 1);
+    --accent-color: hsla(261, 87%, 80%, 1);
+    --card-bg: hsla(0, 0%, 12%, 1);
+    --border-color: hsla(0, 0%, 20%, 1);
+  }
+
+
+  
