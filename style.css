@@ -1,19 +1,34 @@
-/*Imports*/
-
+/* Default Light Theme */
 :root {
-    --main-color:hsla(0, 0%, 97%, 1);
-    --text-color: hsla(0, 0%, 13%, 1);
-    --accent-color: hsla(204, 70%, 53%, 1);
-    --card-bg: hsla(0, 0%, 100%, 1);
-    --border-color: hsla(0, 0%, 88%, 1);
-}
-
-.dark-mode {
-    --background: hsla(0, 0%, 7%, 1);
-    --text-color: hsla(0, 0%, 88%, 1);
-    --accent-color: hsla(261, 87%, 80%, 1);
-    --card-bg: hsla(0, 0%, 12%, 1);
-    --border-color: hsla(0, 0%, 20%, 1);
+    --bg-color: hsla(0, 0%, 98%, 1);
+    --text-color: hsla(0, 0%, 20%, 1);
+    --accent-color: hsla(210, 100%, 50%, 1);
+    --border-color: hsla(0, 0%, 90%, 1);
+    --card-color: hsla(0, 0%, 96%, 1);
+  }
+  
+  /* Dark Theme */
+  [data-theme="dark"] {
+    --bg-color: hsla(220, 15%, 15%, 1);
+    --text-color: hsla(0, 0%, 95%, 1);
+    --accent-color: hsla(210, 100%, 60%, 1);
+    --border-color: hsla(220, 15%, 25%, 1);
+    --card-color: hsla(0, 0%, 15%, 1);
+  }
+  
+  body, nav, span{
+    background: var(--bg-color);
+    color: var(--text-color);!important
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  a, button,{
+    color: var(--accent-color);
+  }
+  
+  hr {
+    border-color: var(--border-color);
   }
 
 
