@@ -23,7 +23,7 @@
     transition: background 0.3s, color 0.3s;
   }
   
-  a, button,{
+  a, button{
     color: var(--accent-color);
   }
   
