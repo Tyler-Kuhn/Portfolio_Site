@@ -4,7 +4,7 @@
     --text-color: hsla(0, 0%, 20%, 1);
     --accent-color: hsla(210, 100%, 50%, 1);
     --border-color: hsla(0, 0%, 90%, 1);
-    --card-color: hsla(0, 0%, 96%, 1);
+    --btn-color: hsla(0, 0%, 96%, 1);
   }
   
   /* Dark Theme */
@@ -13,20 +13,28 @@
     --text-color: hsla(0, 0%, 95%, 1);
     --accent-color: hsla(210, 100%, 60%, 1);
     --border-color: hsla(220, 15%, 25%, 1);
-    --card-color: hsla(0, 0%, 15%, 1);
+    --btn-color: hsla(0, 0%, 20%, 1);
   }
   
   body, nav, span{
     background: var(--bg-color);
-    color: var(--text-color);!important
+    color: var(--text-color)!important;
     font-family: 'Poppins', sans-serif;
     transition: background 0.3s, color 0.3s;
   }
   
-  a, button{
-    color: var(--accent-color);
+  a, .btn, h2{
+    color: var(--accent-color)!important;
   }
   
+  .btn, input > .btn{
+    background: var(--btn-color)!important;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--bg-color);
+  }
+
   hr {
     border-color: var(--border-color);
   }
