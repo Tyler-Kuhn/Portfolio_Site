@@ -40,11 +40,13 @@
   }
 
   #socials img{
-    width: 10%;
+    width: 15%;
     height: auto;
   }
 
-  li {
-  
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
   }
   
