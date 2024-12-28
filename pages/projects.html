@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TK | Ptojects</title>
+  </head>
+  <body>
+    <header class="z-3 position-fixed-top">
+      <nav class="navbar navbar-expand-md border-bottom border-body">
+        <a class="navbar-brand navbar-brand-font-size ms-3">
+          <span class="d-none d-lg-inline">TK|Development</span>
+          <span class="d-none d-sm-inline d-lg-none">TK</span>
+        </a>
+        <div class="ms-auto d-flex align-items-center">
+          <div class="form-check form-switch mt-0.5 me-3">
+            <input class="form-check-input" type="checkbox" id="theme-toggle" />
+            <label class="form-check-label" for="theme-toggle">Light</label>
+          </div>
+          <div>
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item me-3">
+                <a
+                  class="nav-link navbar-nav-link-padding-x"
+                  href="index.html"
+                  ><span>Home</span></a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link navbar-nav-link-padding-x" href="about.html"
+                  ><span>About</span></a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link  active navbar-nav-link-padding-x" href="projects.html"
+                  ><span>Projects</span></a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link navbar-nav-link-padding-x" href="contact.html"
+                  ><span>Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="projects" class="row mt-5 pt-5">
+      <div class="row text-center">
+        <h2 class="m-auto">Projects</h2>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4 mt-5 project-box">
+        <div class="card shadow" style="width: 18rem">
+          <img
+            src="resources/images/portfolio-preview.png"
+            class="card-img-top mb-2 pb-4 border"
+            alt="Preview of a Portfolio Site."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Site</h5>
+            <p class="card-text">
+              A responsive and visually appealing portfolio website showcasing
+              personal projects, skills, and experience. Built with a focus on
+              clean design, dark and light themes, and user-friendly navigation.
+              The site highlights web development projects while reflecting a
+              minimalist design aesthetic.
+            </p>
+            <ul class="d-flex flex-column">
+              <li>
+                <strong>Frontend:</strong> HTML, CSS (Bootstrap, custom styles),
+                JavaScript, React
+              </li>
+              <li>
+                <strong>Design:</strong> Responsive design, dark/light theme
+                switching, HSLA color schemes
+              </li>
+              <li><strong>Version Control:</strong> Git, GitHub</li>
+              <li><strong>Deployment:</strong> GitHub Pages</li>
+            </ul>
+            <a
+              href="https://tyler-kuhn.github.io/Portfolio_Site/"
+              target="_blank"
+              class="btn"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mt-5 project-box">
+        <div class="card shadow" style="width: 18rem">
+          <img
+            src="resources/images/mdp_preview.png"
+            class="card-img-top mb-2 border"
+            style="height: 10rem"
+            alt="Preview of Wedding photography site"
+          /><!-- Remove above style and add to css later-->
+          <div class="card-body">
+            <h5 class="card-title">Modern Dynamics Photography</h5>
+            <p class="card-text">
+              A sleek and modern wedding photography portfolio designed for
+              Modern Dynamics Photography. This project features a responsive
+              layout with an interactive carousel built using Swiper, providing
+              a seamless showcase of stunning photography. Upcoming additions
+              include a photo gallery and a collections page to enhance user
+              engagement and navigation.
+            </p>
+            <ul class="d-flex flex-column">
+              <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+              <li>
+                <strong>UI/UX Design:</strong> Responsive design, custom styles,
+                and layout optimization
+              </li>
+              <li>
+                <strong>Interactive Features:</strong> Swiper.js for image
+                carousels
+              </li>
+              <li>
+                <strong>Web Development Skills:</strong> DOM manipulation, CSS
+                animations, and cross-browser compatibility
+              </li>
+              <li>
+                <strong>Future Enhancements:</strong> Photo gallery and
+                collections page integration
+              </li>
+            </ul>
+            <a
+              href="https://tyler-kuhn.github.io/ModernDynamicsPhotography/"
+              target="_blank"
+              class="btn"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 text-center mt-5 project-box">
+        <div class="card shadow" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Weather App</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -5,7 +5,7 @@ const savedTheme = localStorage.getItem("theme") || "light";
 document.body.setAttribute("data-theme", savedTheme);
 themeToggle.checked = savedTheme === "dark";  // Update the checkbox state
 
-// Function to update the label text dynamically based on the theme
+// Update the label text dynamically based on the theme
 function updateLabelText(theme) {
   const label = document.querySelector('label[for="theme-toggle"]');
   label.textContent = theme === "dark" ? "Dark" : "Light"; // Toggle label between 'Light' and 'Dark'

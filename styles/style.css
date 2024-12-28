@@ -15,8 +15,8 @@
     --border-color: hsla(220, 15%, 25%, 1);
     --btn-color: hsla(0, 0%, 20%, 1);
   }
-  
-  body, nav, span{
+  /*Main Styles*/
+  body, nav, span, .nav-color, .navbar-brand, p, h1{
     background: var(--bg-color);
     color: var(--text-color)!important;
     font-family: 'Poppins', sans-serif;
@@ -39,6 +39,14 @@
     border-color: var(--border-color);
   }
 
+/*Main Spacing*/
+main{
+  margin-top: 3rem;
+}
+
+
+
+/*Footer Styles*/
   #socials img{
     width: 15%;
     height: auto;

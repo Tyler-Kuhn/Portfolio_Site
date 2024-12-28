@@ -9,212 +9,65 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Tyler Kuhn | Portfolio</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>TK | Home</title>
   </head>
   <body>
-    <header class="z-3 position-fixed-top ">
+    <header class="z-3 position-fixed-top">
       <nav
-        class="navbar navbar-expand-md border-bottom border-body"
+        class="navbar navbar-expand-md bg-body-light border-bottom shadow-sm"
       >
-        <a class="navbar-brand navbar-brand-font-size ms-3">
-          <span class="d-none d-lg-inline">TK|Development</span>
-          <span class="d-none d-sm-inline d-lg-none">TK</span>
-        </a>
-        <div class="ms-auto d-flex align-items-center">
-          <div class="form-check form-switch mt-0.5 me-3">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="theme-toggle"
-            />
-            <label class="form-check-label" for="theme-toggle">Light</label>
-          </div>
-          <div>
-            <ul class="navbar-nav flex-row">
-              <li class="nav-item me-3">
-                <a
-                  class="nav-link active navbar-nav-link-padding-x"
-                  href="#home"
-                  ><span>Home</span></a
+        <div class="container-fluid">
+          <a class="navbar-brand ps-3" href="index.html"
+            >TK|Development</a>
+            
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex-sm justify-content-end"
+            id="navbarSupportedContent"
+          >
+          
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active nav-color" aria-current="page" href="index.html"
+                  >Home</a
                 >
               </li>
-              <li class="nav-item me-3">
-                <a class="nav-link navbar-nav-link-padding-x" href="#about"
-                  ><span>About</span></a
-                >
+              <li class="nav-item">
+                <a class="nav-link nav-color" href="/pages/about.html">About</a>
               </li>
-              <li class="nav-item me-3">
-                <a class="nav-link navbar-nav-link-padding-x" href="#projects"
-                  ><span>Projects</span></a
-                >
+              <li class="nav-item">
+                <a class="nav-link nav-color" href="/pages/projects.html">Projects</a>
               </li>
-              <li class="nav-item me-3">
-                <a class="nav-link navbar-nav-link-padding-x" href="#contact"
-                  ><span>Contact</span></a
-                >
+              <li class="nav-item">
+                <a class="nav-link nav-color" href="/pages/contact.html">Contact</a>
               </li>
+             
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="container mt-5 pt-5 mb-5 ">
-      <div id="home" class="row">
-        <div class="col-12 col-md-5 pt-5 pe-5">
-          <img
-            src="resources/images/profile_pic.jpg"
-            class="img-fluid rounded shadow-lg border border-secondary"
-          />
+    <main class="container">
+      <div id="home" class="row col-12 col-md-6 mt-auto">
+        <div class="typing-effect">
+          <h1 id="typed-heading"></h1>
+          <p id="typed-paragraph"></p>
+          <span class="cursor">|</span>
         </div>
-        <div class="col-12 col-md-6 mt-auto pe-5">
-          <h1>Hi I'm Tyler Kuhn</h1>
-          <p>Crafting Clean Code & Minimalist Designs</p>
-        </div>
-      </div>
-      <div id="about" class="row my-5 p-5">
-        <div class="col-12 col-lg-6 my-5 p-5 border rounded shadow">
-          <h2>About me</h2>
-          <p>
-            Hi, I’m Tyler, a front-end web developer and photographer passionate
-            about creating responsive websites with clean, minimalist designs. I
-            hold a certification in Software Testing from TripleTen, sharpening
-            my attention to detail and commitment to quality. My experience in
-            photography inspires my design approach, helping me craft visually
-            appealing digital experiences. When I’m not coding or behind the
-            camera, you’ll find me rock climbing, embracing challenges both on
-            the wall and in my projects.
-          </p>
-        </div>
-        <div class="col-12 col-lg-3 mt-5 p-5">
-          <img
-            src="resources/images/aboutme1.JPG"
-            class="img-fluid rounded mt-5 shadow-lg border border-secondary"
-          />
-        </div>
-        <div class="col-12 col-lg-3 mt-5 p-5">
-          <img
-            src="resources/images/aboutme1.JPG"
-            class="img-fluid rounded mt-5 shadow-lg border border-secondary"
-          />
-        </div>
-      </div>
-      <div id="projects" class="row mt-5 pt-5">
-        <div class="row text-center">
-          <h2 class="m-auto">Projects</h2>
-        </div>
-        <div class="col-12 col-md-12 col-lg-4 mt-5 project-box">
-          <div class="card shadow" style="width: 18rem">
-            <img
-              src="resources/images/portfolio-preview.png"
-              class="card-img-top mb-2 pb-4 border"
-              alt="Preview of a Portfolio Site."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Site</h5>
-              <p class="card-text">
-                A responsive and visually appealing portfolio website showcasing
-                personal projects, skills, and experience. Built with a focus on
-                clean design, dark and light themes, and user-friendly
-                navigation. The site highlights web development projects while
-                reflecting a minimalist design aesthetic.
-              </p>
-              <ul>
-                <li>
-                  Frontend: HTML, CSS (Bootstrap, custom styles), JavaScript,
-                  React
-                </li>
-                <li>
-                  Design: Responsive design, dark/light theme switching, HSLA
-                  color schemes
-                </li>
-                <li>Version Control: Git, GitHub</li>
-                <li>Deployment: GitHub Pages</li>
-              </ul>
-              <a
-                href="https://tyler-kuhn.github.io/Portfolio_Site/"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 mt-5 project-box">
-          <div class="card shadow " style="width: 18rem">
-            <img
-              src="resources/images/mdp_preview.png"
-              class="card-img-top mb-2 border"
-              style="height: 10rem;"
-              alt="Preview of Wedding photography site"
-            /><!-- Remove above style and add to css later-->
-            <div class="card-body">
-              <h5 class="card-title">Modern Dynamics Photography</h5>
-              <p class="card-text">
-                A sleek and modern wedding photography portfolio designed for
-                Modern Dynamics Photography. This project features a responsive
-                layout with an interactive carousel built using Swiper,
-                providing a seamless showcase of stunning photography. Upcoming
-                additions include a photo gallery and a collections page to
-                enhance user engagement and navigation.
-              </p>
-              <ul>
-                <li>Frontend Development: HTML, CSS, JavaScript</li>
-                <li>
-                  UI/UX Design: Responsive design, custom styles, and layout
-                  optimization
-                </li>
-                <li>Interactive Features: Swiper.js for image carousels</li>
-                <li>
-                  Web Development Skills: DOM manipulation, CSS animations, and
-                  cross-browser compatibility
-                </li>
-                <li>
-                  Future Enhancements: Photo gallery and collections page
-                  integration
-                </li>
-              </ul>
-              <a
-                href="https://tyler-kuhn.github.io/ModernDynamicsPhotography/"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 text-center mt-5 project-box">
-          <div class="card shadow" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Weather App</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn">Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="contact" class="row text-center my-5 py-5">
-        <h2>Contact</h2>
-        <div class="col-12 col-lg-6">
-          <ul id="socials" class="flex-row">
-            <li><a href="https://www.linkedin.com/in/iamtylerkuhn/"><img src="resources/icons/linkedin_2504923.png" alt="Linkedin Logo"></a></li>
-            <li><a href="https://github.com/Tyler-Kuhn"><img src="resources/icons/github_5968866.png" alt="GitHub Logo"></a></li>
-            <li><a href=""><img src="resources/icons/instagram_2504918.png" alt="Instagram Logo"></a></li>
-          </ul>
-        </div>
-        <form action="/submit" method="POST" class="border shadow rounded">
-          <label for="name" class="form-label my-3">Name</label>
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Enter your Name" required>
-          <label for="email" class="form-label mb-3">Email</label>
-          <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Enter your Email"  required>
-          <label for="message" class="form-label mb-3">Message</label>
-          <textarea class="form-control" id="message" class="mb-3" name="message" rows="5" placeholder="Send me a message" required></textarea>
-          <input type="submit" value="Send" class="btn my-3">
-        </form>
+        <div id="profile-pic"></div>
       </div>
     </main>
     <script
@@ -222,6 +75,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/typing-effect.js"></script>
   </body>
 </html>
