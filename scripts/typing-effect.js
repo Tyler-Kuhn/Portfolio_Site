@@ -33,12 +33,14 @@ const textArray = [
         charIndex = 0; // Reset character index for next element
         currentIndex++;
         if (currentIndex < textArray.length) {
-          type(); // Start typing the next element
-        }
-      }, delayBetweenPhrases);
+            type(); // Start typing the next element
+          } else {
+            // Once all text is typed, append the image
+            imgContainer.appendChild(img);
+          }
+        }, delayBetweenPhrases);
     }
 
-    imgContainer.appendChild(ig);
   }
   
   document.addEventListener("DOMContentLoaded", () => {
