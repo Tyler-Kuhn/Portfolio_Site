@@ -45,3 +45,12 @@
         opacity: 0;
     }
   }
+
+  #profile-pic img {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+
+  #profile-pic img.visible {
+    opacity: 1;
+  }
