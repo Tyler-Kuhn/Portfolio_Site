@@ -1,60 +1,75 @@
 /* Default Light Theme */
 :root {
-    --bg-color: hsla(0, 0%, 98%, 1);
-    --text-color: hsla(0, 0%, 20%, 1);
-    --accent-color: hsla(210, 100%, 50%, 1);
-    --border-color: hsla(0, 0%, 90%, 1);
-    --btn-color: hsla(0, 0%, 96%, 1);
-  }
-  
-  /* Dark Theme */
-  [data-theme="dark"] {
-    --bg-color: hsla(220, 15%, 15%, 1);
-    --text-color: hsla(0, 0%, 95%, 1);
-    --accent-color: hsla(210, 100%, 60%, 1);
-    --border-color: hsla(220, 15%, 25%, 1);
-    --btn-color: hsla(0, 0%, 20%, 1);
-  }
-  /*Main Styles*/
-  body, nav, span, .nav-color, .navbar-brand, p, h1{
-    background: var(--bg-color);
-    color: var(--text-color)!important;
-    font-family: 'Poppins', sans-serif;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  a, .btn, h2{
-    color: var(--accent-color)!important;
-  }
-  
-  .btn, input > .btn{
-    background: var(--btn-color)!important;
-  }
+  --bg-color: linear-gradient(
+    to right,
+    hsl(210, 100%, 97%),
+    hsl(220, 90%, 80%)
+  );
+  --text-color: hsl(210, 10%, 23%);
+  --accent-color: hsl(220, 85%, 60%);
+  --border-color: hsl(220, 40%, 70%);
+  --btn-color: hsl(220, 80%, 55%);
+  --card-color: hsl(210, 90%, 95%);
+}
 
-  .form-check-input:checked {
-    background-color: var(--bg-color);
-  }
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-color: linear-gradient(to right, hsl(210, 36%, 3%), hsl(30, 87%, 20%));
+  --text-color: hsl(0, 0%, 95%);
+  --accent-color: hsl(25, 85%, 55%);
+  --border-color: hsl(30, 40%, 40%);
+  --btn-color: hsl(25, 80%, 45%);
+  --card-color: hsl(210, 30%, 3%);
+}
 
-  hr {
-    border-color: var(--border-color);
-  }
+/*Main Styles*/
+body,
+nav {
+  background: var(--bg-color);
+  color: var(--text-color) !important;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+span,
+.nav-color,
+.navbar-brand {
+  color: var(--text-color) !important;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s;
+}
+
+a,
+.btn {
+  color: var(--accent-color) !important;
+}
+
+.btn,
+input > .btn {
+  background: var(--btn-color) !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--bg-color);
+}
+
+hr {
+  border-color: var(--border-color);
+}
 
 /*Main Spacing*/
-main{
+main {
   margin-top: 3rem;
 }
 
-
-
 /*Footer Styles*/
-  #socials img{
-    width: 15%;
-    height: auto;
-  }
+#socials img {
+  width: 15%;
+  height: auto;
+}
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-  }
-  
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}

@@ -9,6 +9,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <title>TK | Home</title>
@@ -73,13 +77,23 @@
       </nav>
     </header>
     <main class="container">
-      <div id="home" class="row">
-        <div class="typing-effect">
-          <h1 id="typed-heading"></h1>
-          <p id="typed-paragraph"></p>
-          <span class="cursor">|</span>
+      <div class="card">
+        <img src="styles/resources/images/profile_pic.jpg" />
+        <div>
+          <div id="home" class="row">
+            <div class="typing-effect">
+              <h2 id="typed-heading"></h2>
+              <p id="typed-paragraph"></p>
+              <span class="cursor">|</span>
+            </div>
+            <div class="socials">
+              <button><i class="fa-brands fa-github"></i></button>
+              <button><i class="fa-brands fa-linkedin"></i></button>
+              <button><i class="fa-brands fa-facebook"></i></button>
+              <button><i class="fa-brands fa-instagram"></i></button>
+            </div>
+          </div>
         </div>
-        <div id="profile-pic"></div>
       </div>
     </main>
     <script
